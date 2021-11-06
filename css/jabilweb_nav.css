@@ -1,0 +1,324 @@
+/* CSS Document */
+* {
+margin: 0;
+padding: 0;
+}
+
+#jabilweb-nav {
+	height:40px;
+	position:relative;
+	text-align: center;
+	width: 1000px;
+	padding: 0px 0px 10px;
+	z-index: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px auto;
+}
+
+/* The nav styling */
+/* Remove the padding, margins and bullets from the lists */
+.nav, .nav ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	/*text-transform: capitalize;*/
+	z-index: 200;
+}
+
+/* Set up the top level list items and float left to place inline */
+.nav li.top {
+	display:block;
+	float:left;
+	position:relative;
+	z-index: 0;
+}
+
+/* Style and position the table so it takes no part in the nav function. The font size is necessary for IE5.5 */
+.nav table {
+	border-collapse:collapse;
+	width:0;
+	height:0;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+}
+
+/* Default top link link styling */
+.nav li.top a.top_link {
+	display:block;
+	float:left;
+	height:40px;
+	z-index: 0;
+}
+.nav li.top a span {position:absolute; left:-9999px; top:0; z-index:0; font-size:9px;} /* move the link text off screen */
+
+/* pre-load the hover /images into the lists */
+.nav li.home {
+	width: 140px; 
+	background: url(../images/nav/nav_home.gif) no-repeat; 
+	position: relative;
+	z-index: -100;
+}
+.nav li.departments {
+	width: 160px;
+	background: url(../images/nav/nav_departments.gif) no-repeat; 
+	position: relative;
+	Z-INDEX: -101;
+}
+.nav li.applications {
+	width: 170px;
+	background: url(../images/nav/nav_applications.gif) no-repeat; 
+	position: relative;
+	Z-INDEX: -102;
+}
+.nav li.sitelinks {
+	width: 150px; 
+	background: url(../images/nav/nav_sitelinks.gif) no-repeat; 
+	position: relative;
+	Z-INDEX: -103;
+}
+.nav li.corplinks {
+	width: 180px; 
+	background: url(../images/nav/nav_corplinks.gif) no-repeat;
+	position: relative;
+	Z-INDEX: -104;
+}
+.nav li.qualitypolicy {
+	width: 200px; 
+	background: url(../images/nav/nav_corppolicy.gif) no-repeat; 
+	position: relative;
+	Z-INDEX: -105;
+}
+.nav li.end {
+	width: 200px;
+	background: url(../images/nav/nav_end.gif) no-repeat;
+	position: relative;
+	Z-INDEX: -105;
+}
+
+.nav li.ourcompany {
+	width:200px;
+	background:url(../images/nav/nav_hover_home.gif) no-repeat;
+	position: relative;
+	z-index: -101;
+}
+.nav li.newsandresearch {
+	width:200px;
+	background:url(../images/nav/nav_hover_departments.gif) no-repeat;
+	position: relative;
+	z-index: -101;
+}
+.nav li.businessstructure {
+	width:200px;
+	background:url(../images/nav/nav_hover_quicklinks.gif) no-repeat;
+	position: relative;
+	z-index: -102;
+}
+.nav li.resourcecenter {
+	width:200px;
+	background:url(../images/nav/nav_hover_ephonebook.gif) no-repeat;
+	z-index: -103;
+	position: relative;
+}
+.nav li.jabiluniversity {
+	width:200px;
+	background:url(../images/nav/nav_hover_servicedesk.gif) no-repeat;
+	z-index: -104;
+	position: relative;
+}
+
+/* set up the normal unhovered /images in the links */
+.nav li a#home {
+	width: 140px; 
+	background: url(images/nav/nav_home.gif) no-repeat; 
+	position: relative;
+	z-index: 0;
+}
+.nav li a#departments {
+	width: 160px; 
+	background: url(images/nav/nav_departments.gif) no-repeat; 
+	position: relative;
+	z-index: 0;
+}
+.nav li a#applications {
+	width: 170px; 
+	background: url(images/nav/nav_applications.gif) no-repeat; 
+	position: relative;
+	z-index: 0;
+}
+.nav li a#sitelinks {
+	width: 150px; 
+	background: url(images/nav/nav_sitelinks.gif) no-repeat;
+	position: relative;
+	z-index: 0;
+}
+.nav li a#corplinks {
+	width: 180px; 
+	background: url(images/nav/nav_corplinks.gif) no-repeat; 
+	position: relative;
+	z-index: 0;
+}
+.nav li a#qualitylinks {
+	width: 200px; 
+	background: url(images/nav/nav_corppolicy.gif) no-repeat;
+	position: relative;
+	z-index: 0;
+}
+
+.nav li a#ourcompany {
+	width:200px;
+	background:url('../images/nav/nav_home.gif') no-repeat;
+	position: relative;
+	z-index: 0;
+}
+.nav li a#newsandresearch {
+	width:200px;
+	background:url(../images/nav/nav_departments.gif) no-repeat;
+	position: relative;
+	z-index: 0;
+}
+.nav li a#businessstructure {
+	width:200px;
+	background:url(../images/nav/nav_quicklinks.gif) no-repeat;
+	position: relative;
+	z-index: 0;
+}
+.nav li a#resourcecenter {
+	width:200px;
+	background:url(../images/nav/nav_ePhoneBook.gif) no-repeat;
+	z-index: 0;
+	position: relative;
+}
+.nav li a#jabiluniversity {
+	width:200px;
+	background:url(../images/nav/nav_servicedesk.gif) no-repeat;
+	z-index: 0;
+	position: relative;
+}
+
+/* Style the list OR link hover. Depends on which browser is used */
+.nav a:hover {visibility:visible;} /* for IE6 */
+.nav li:hover {
+	position:relative;
+	z-index:100;
+	text-align: left;
+} /* for IE7 */
+
+/* make the links transparent on hover so that the hover /images in the lists show through (no flicker) */
+.nav li a#home:hover, .nav li:hover a#home, 
+.nav li a#departments:hover, .nav li:hover a#departments,
+.nav li a#applications:hover, .nav li:hover a#applications,
+.nav li a#sitelinks:hover, .nav li:hover a#sitelinks,
+.nav li a#corplinks:hover, .nav li:hover a#corplinks,
+.nav li a#qualitypolicy:hover, .nav li:hover a#qualitypolicy { background: transparent; }
+
+.nav li a#ourcompany:hover, .nav li:hover a#ourcompany,
+.nav li a#newsandresearch:hover, .nav li:hover a#newsandresearch,
+.nav li a#businessstructure:hover, .nav li:hover a#businessstructure,
+.nav li a#resourcecenter:hover, .nav li:hover a#resourcecenter,
+.nav li a#jabiluniversity:hover, .nav li:hover a#jabiluniversity {background:transparent;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.nav ul, 
+.nav :hover ul ul, 
+.nav :hover ul :hover ul ul,
+.nav :hover ul :hover ul :hover ul ul,
+.nav :hover ul :hover ul :hover ul :hover ul ul {
+	position:absolute;
+	left:-9999px;
+	top:-9998px;
+	width:0;
+	height:0;
+	z-index: 200;
+}
+
+/* first drop down sub level */
+.nav :hover ul.sub {
+	display:block;
+	left:13px;
+	top:30px;
+	padding:0px;
+	border:1px solid #1c3c6d;
+	white-space:nowrap;
+	width:170px;
+	height:auto;
+	background-image: url(../images/nav/navsubbackground.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-color: #054290;
+	z-index: 200;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.nav :hover ul.sub li {
+	display:block;
+	height:auto;
+	position:relative;
+	float:left;
+	width:170px;
+	padding: 0px;
+	z-index: 200;
+}
+.nav :hover ul.sub li a {
+	display:block;
+	height:17px;
+	width:170px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-indent: 4px;
+	border-bottom: thin groove #31B2FF;
+	background-color: #054290;
+	background-image: url(../images/nav/navsubbackground.gif);
+	background-repeat: repeat;
+	background-position: center bottom;
+	text-align: left;
+	padding: 3px 0px;
+	z-index: 200;
+	font: 9px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.nav :hover ul.sub li a.shift {
+	background:#054290 url(../images/nav/navsubbackground_arrow.gif) repeat center bottom;
+	z-index: 200;
+	display: block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.nav :hover ul.sub li a:hover {
+	color:#fff;
+	border-bottom-width: thin;
+	border-bottom-style: groove;
+	border-bottom-color: #31B2FF;
+	background: #007a50 url(../images/nav/navsubbackground2.gif) repeat center center;
+	z-index: 200;
+	display: block;
+}
+.nav :hover ul.sub li a.shift:hover {
+	background:#007a50 url(../images/nav/navsubbackground2_arrow.gif) repeat center center;
+	color:#fff;
+	z-index: 200;
+}
+.nav :hover ul li:hover > a.shift {
+	background:#007a50 url(../images/nav/navsubbackground3_arrow.gif) repeat center center;
+	color:#fff;
+	z-index: 300;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+} 
+
+/* set up the shiftout levels when hovering */
+.nav :hover ul :hover ul,
+.nav :hover ul :hover ul :hover ul,
+.nav :hover ul :hover ul :hover ul :hover ul,
+.nav :hover ul :hover ul :hover ul :hover ul :hover ul
+{
+	left:170px;
+	top:-1px;
+	background: #054290 url(../images/nav/navsubbackground.gif) center bottom;
+	padding:0px;
+	border:thin solid #054290;
+	white-space:nowrap;
+	width:170px;
+	height:auto;
+	z-index:300;
+	display: block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
