@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./app.css">
         <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
         <!-- <link rel="android-chrome" sizes="192x192" href="img/android-chrome-192x192.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -135,5 +137,32 @@
             </div>
         </div>
         <script src="./script.js"></script>
+    </body>
+    <body>
+    
+        <section>
+    
+            <button class="chat-btn"> 
+                <i class="material-icons"> comment </i>
+            </button>
+    
+            <div class="chat-popup">
+                <div class="badge">1</div>
+                <div class="chat-area">
+                 <div class="income-msg">
+                    <img src="img/person.png" class="avatar" alt="">
+                    <span class="msg"> Hiện tại tôi đang bận, để lại tin nhắn cho tôi </span>
+                </div> 
+                </div>
+    
+                <div class="input-area">
+                    <input type="text">
+                    <button class="submit"> <i class="material-icons"> send</i></button>
+                </div>
+            </div>
+        </section>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+        <script src="./main.js" ></script>
     </body>
 </html>
