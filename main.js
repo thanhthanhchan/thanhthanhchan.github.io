@@ -28,18 +28,23 @@ chatBtn.addEventListener('click', ()=>{
 // send msg 
 
    var today = new Date();
-   var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+   var time_start = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
 submitBtn.addEventListener('click', ()=>{
+
+  var today = new Date();
+  var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
     let userInput = inputElm.value;
 
     var url = 'https://script.google.com/macros/s/AKfycbwOqJwESaIOZdJ3yKOkK7W8x9XUkN_PhxTi4YHnz8CHAyyc484/exec';
 
     var data = {
       mess: userInput,
-      date_input: date,
-      time_input: time
+      time_now: time,
+      time_site: time_start,
+      date: date
     };
 
     $.ajax({
