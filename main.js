@@ -34,7 +34,7 @@ chatBtn.addEventListener('click', ()=>{
 submitBtn.addEventListener('click', ()=>{
     let userInput = inputElm.value;
 
-    var url = 'https://script.google.com/macros/s/AKfycbyqSvcY-hmXB1tQKWPf6X9F7JjPW_ZEgbIZlBEPByKf1ju_lT4/exec';
+    var url = 'https://script.google.com/macros/s/AKfycbwOqJwESaIOZdJ3yKOkK7W8x9XUkN_PhxTi4YHnz8CHAyyc484/exec';
 
     var data = {
       mess: userInput,
