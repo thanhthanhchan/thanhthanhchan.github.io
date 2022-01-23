@@ -26,8 +26,29 @@ chatBtn.addEventListener('click', ()=>{
 })
 
 // send msg 
+
+   var today = new Date();
+   var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
 submitBtn.addEventListener('click', ()=>{
     let userInput = inputElm.value;
+
+    var url = 'https://script.google.com/macros/s/AKfycbyqSvcY-hmXB1tQKWPf6X9F7JjPW_ZEgbIZlBEPByKf1ju_lT4/exec';
+
+    var data = {
+      mess: userInput,
+      date_input: date,
+      time_input: time
+    };
+
+    $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: data
+    });
+
 
     let temp = `<div class="out-msg">
     <span class="my-msg">${userInput}</span>
