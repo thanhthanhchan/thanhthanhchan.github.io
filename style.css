@@ -126,8 +126,8 @@ html {
     font-weight: 600;
     line-height: 2.2rem;
     text-align: center;
-    
 }
+
 .app.dark .card__title--name h1 {
     color: var(--white-color);
 }
@@ -145,8 +145,8 @@ html {
     text-align: center;
     border-radius: 50%;
     margin-left: 5px;
-    cursor: pointer;
 }
+
 .veri__check .fas {
     line-height: 18px;
     font-size: 1.1rem;
